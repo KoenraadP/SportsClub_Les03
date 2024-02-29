@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace SportsClub.Dal
 {
-    public class MemberDal
+    public static class MemberDal
     {
         // CREATE
 
         // READ ALL
-        public List<Member> Read()
+        public static List<Member> Read()
         {
             // verbinding met databank maken
             using (var db = new SportsClubDbContext())

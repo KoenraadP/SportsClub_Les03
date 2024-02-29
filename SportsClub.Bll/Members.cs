@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace SportsClub.Bll
 {
-    public class Members
+    public static class Members
     {
         // CREATE
 
         // READ ALL
-        public List<Member> Read()
+        public static List<Member> Read()
         {
-            List<Member> lstMembers = new MemberDal().Read();
+            List<Member> lstMembers = MemberDal.Read();
             return lstMembers;
         }
 

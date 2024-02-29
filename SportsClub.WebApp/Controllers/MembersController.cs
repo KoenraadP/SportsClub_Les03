@@ -10,11 +10,19 @@ namespace SportsClub.WebApp.Controllers
 {
     public class MembersController : Controller
     {
-        // GET: Members
+        // CREATE
+
+        // READ ALL
         public ActionResult Index()
         {
-            List<Member> lstMembers = new Members().Read();
+            List<Member> lstMembers = Members.Read();
             return View(lstMembers);
         }
+
+        // READ SINGLE
+
+        // UPDATE
+
+        // DELETE
     }
 }
