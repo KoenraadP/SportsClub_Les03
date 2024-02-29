@@ -1,4 +1,5 @@
-﻿using SportsClub.Entities;
+﻿using SportsClub.Bll;
+using SportsClub.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,7 @@ namespace SportsClub.WebApp.Controllers
         // GET: Members
         public ActionResult Index()
         {
-            List<Member> lstMembers = new List<Member>
-            {
-                new Member("Koenraad","Pecceu"),
-                new Member("Mieke", "Lapeire")
-            };
+            List<Member> lstMembers = new Members().Read();
             return View(lstMembers);
         }
     }
