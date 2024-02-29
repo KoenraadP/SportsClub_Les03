@@ -15,6 +15,7 @@ namespace SportsClub.Bll
         // READ ALL
         public static List<Member> Read()
         {
+            // read methode uit Dal gebruiken
             List<Member> lstMembers = MemberDal.Read();
             return lstMembers;
         }

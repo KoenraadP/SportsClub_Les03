@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace SportsClub.Dal
 {
+    // door static toe te voegen kunnen we deze class
+    // gebruiken zonder new ...() te moeten typen
+    // zorgt ook voor minder memory usage
+    // als de class static is, moeten alle methodes erin
+    // OOK static zijn
     public static class MemberDal
     {
         // CREATE
